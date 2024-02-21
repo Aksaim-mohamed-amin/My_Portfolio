@@ -1,0 +1,46 @@
+/* Global Variables */
+:root{
+    --bg-color: #282C33;
+    --main-textColor: white;
+    --secendry-textColor: #ABB2BF;
+    --custom-pink: #E06B74;
+    --custom-purpel: #C778DD;
+    --custom-green: #98C379;
+    --costum-yellow: #E5C07A;
+    --custom-blue: #62AEEF;
+    --custom-turquoise: #55B6C2;
+}
+
+/* Global Rules */
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Fira Code";
+    background-color: var(--bg-color, black);
+}
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* header */
+header{
+    position: absolute;
+}
+header .container{
+    display: flex;
+    align-items: center;
+}
