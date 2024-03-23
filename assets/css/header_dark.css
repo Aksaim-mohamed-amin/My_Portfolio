@@ -3,6 +3,7 @@ header{
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 2000;
 }
 header .container{
     height: 60px;
@@ -11,6 +12,7 @@ header .container{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--custom-purpel, #C778DD);
+    position: relative;
 }
 header .container a.logo{
     display: block;
