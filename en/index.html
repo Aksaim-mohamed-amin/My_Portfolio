@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- tab -->
     <title>&lt;Amin/&gt;</title>
-    <link rel="icon" href="/assets/images/logo.png" type="image/x-icon">
+    <link rel="icon" href="/assets/images/logo.png" type="image/icon">
     <!-- normalize -->
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <!-- fontawsome -->
@@ -14,28 +14,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
-    <!-- main css -->
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <!-- dark theme -->
-    <link rel="stylesheet" href="/assets/css/dark_theme.css">
-    <!-- responsive -->
-    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="../assets/css/common_dark.css">
+    <link rel="stylesheet" href="../assets/css/header_dark.css">
+    <link rel="stylesheet" href="../assets/css/footer_dark.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="left">
-                <img src="/assets/images/logo.png" alt="logo" class="logo">
-            </div>
-            <div class="right">
+            <a href="#home" class="logo"></a>
+            <div class="nav">
                 <ul>
-                    <li>about_me</li>
-                    <li>projects</li>
-                    <li>articles</li>
-                    <li>tools</li>
-                    <li>contacts</li>
+                    <li><a href="#about_me">About-me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#articles">Articles</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
+                <div class="seperator"></div>
+                <select class="lang-select" name="language" id="lang-select">
+                    <option value="english">EN</option>
+                    <option value="frensh">FR</option>
+                    <option value="arabic">AR</option>
+                </select>
+                <div class="mode"></div>
             </div>
         </div>
     </header>
