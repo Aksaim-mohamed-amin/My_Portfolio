@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- tab -->
-    <title>&lt;Amin/&gt;</title>
-    <link rel="icon" href="../assets/images/logo.png" type="image/icon">
     <!-- normalize -->
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <!-- fontawsome -->
@@ -17,45 +14,44 @@
     <!-- styles -->
     <link rel="stylesheet" href="../assets/css/common_dark.css">
     <link rel="stylesheet" href="../assets/css/header_dark.css">
-    <link rel="stylesheet" href="../assets/css/footer_dark.css">
-    <link rel="stylesheet" href="../assets/css/media_dark.css">
+    <!-- tab -->
+    <title>&lt;Amin/&gt;</title>
+    <link rel="icon" href="../assets/images/logo.png" type="image/icon">
 </head>
 <body>
-    <!-- Header -->
     <header>
-        </div>
         <div class="container">
-            <div class="media">
-                <a href="">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
+            <!-- logo -->
+            <div class="logo">
+                <a href="" class="logo"></a>
             </div>
-            <a href="#home" class="logo"></a>
-            <div class="nav">
+            <!-- navigation -->
+            <nav>
                 <ul>
-                    <li><a href="#about_me">About-me</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#articles">Articles</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li>
+                        <a href="#Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#About_me">About_me</a>
+                    </li>
+                    <li>
+                        <a href="#Projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#Articles">Articles</a>
+                    </li>
+                    <li>
+                        <a href="#Contact_me">Contact_me</a>
+                    </li>
                 </ul>
-                <div class="seperator"></div>
-                <select class="lang-select" name="language" id="lang-select">
-                    <option value="english">EN</option>
-                    <option value="frensh">FR</option>
-                    <option value="arabic">AR</option>
-                </select>
-                <div class="mode"></div>
+            </nav>
+            <!-- preferences -->
+            <div class="preferences">
+                <button class="language"></button>
+                <button class="dark_light_mode" onclick="myFunction()"></button>
             </div>
         </div>
     </header>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

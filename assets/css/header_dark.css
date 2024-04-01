@@ -1,75 +1,53 @@
-header{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 2000;
-}
 header .container{
-    height: 60px;
-    padding: 20px 0 0 0;
+    width: 100%;
+    height: 50px;
+    position: fixed;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--custom-purpel, #C778DD);
-    position: relative;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-bottom: 1px solid var(--secendry-textColor, #ABB2BF);
 }
-header .container a.logo{
+header .container .logo a.logo{
     display: block;
     width: 20px;
     height: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
     background: url("../images/logo.png") no-repeat center;
     background-size: cover;
 }
-header .container .nav{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-header .container .nav ul{
+header .container nav ul{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-header .container .nav li a{
-    display: block;
-    padding-right: 20px;
-    color: var(--secendry-textColor, #ABB2BF);
+header .container nav ul li a{
     text-decoration: none;
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-}
-header .container .nav li a::before{
-    content: "#";
-    color: var(--custom-purpel, #C778DD);
-    margin: 3px;
-}
-header .container .nav li a:hover{
-    color: var(--main-textColor, white);
-    font-size: 16px;
-}
-.seperator{
-    width: 1px;
-    height: 20px;
-    background-color: var(--custom-purpel, #C778DD);
-}
-header .container .nav select.lang-select{
-    background-color: transparent;
-    border: 0;
-    margin-left: 10px;
-    margin-right: 5px;
     color: var(--secendry-textColor, #ABB2BF);
-    appearance: none;
+    margin: 15px;
 }
-header .container .nav select.lang-select:hover{
+header .container nav ul li a::before{
+    content: "#";
+    position: relative;
+    left: -5px;
+    color: var(--custom-purpel, #C778DD);
+    font-size: 14px;
+}
+header .container nav ul li a:hover{
     color: var(--main-textColor, white);
 }
-header .container .nav .mode{
-    display: block;
+header .container .preferences button{
     width: 20px;
     height: 20px;
-    background: url("../images/dark-mode-icon.png") no-repeat center;
+    border: none;
+}
+header .container .preferences button.language{
+    background: url("../images/language_svg_dark.svg") no-repeat center;
+    background-size: cover;
+    margin-right: 5px;
+}
+header .container .preferences button.dark_light_mode{
+    background: url("../images/sun_svg.svg") no-repeat center;
     background-size: cover;
 }
